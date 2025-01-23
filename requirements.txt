@@ -2,5 +2,5 @@ aiofiles==24.1.0
 meval==2.5
 motor==3.5.1
 pymongo==4.5.0
-pyrofork==2.3.33
+pyrofork==2.3.56
 TgCrypto-pyrofork==1.2.6
