@@ -25,7 +25,7 @@ async def join_buttons(client: Client, message: Message, user_id: int, owner_id:
     if not no_join_ids:
         return None
 
-    owner_button = [[("ᴘᴇᴍʙᴜᴀᴛ ꜱᴀʏᴀ🧑🏻‍💻", f"https://tg://openmessage?user_id={owner_id}", "url")]]
+    owner_button = [[("ᴘᴇᴍʙᴜᴀᴛ ꜱᴀʏᴀ🧑🏻‍💻", f"tg://openmessage?user_id={owner_id}", "url")]]
 
     buttons = []
     fs_data = helper_handlers.fs_chats
