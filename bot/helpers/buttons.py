@@ -16,16 +16,16 @@ def admin_buttons() -> ikb:
             buttons.append((chat_type, invite_link, "url"))
 
     button_layouts = [buttons[i : i + 3] for i in range(0, len(buttons), 3)]
-    button_layouts.append([("ʙᴏᴛ ꜱᴇᴛᴛɪɴɢꜱ", "settings")])
+    button_layouts.append([("ʙᴏᴛ ꜱᴇᴛᴛɪɴɢꜱ🛠️", "settings")])
 
     return ikb(button_layouts)
 
-async def join_buttons(client: Client, message: Message, user_id: int, owner_username: int = "iniemin") -> Optional[ikb]:
+async def join_buttons(client: Client, message: Message, user_id: int, owner_id: int = 6997083640) -> Optional[ikb]:
     no_join_ids = await helper_handlers.user_is_not_join(user_id)
     if not no_join_ids:
         return None
 
-    owner_button = [[("ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻", f"https://t.me/{owner_username}", "url")]]
+    owner_button = [[("ᴘᴇᴍʙᴜᴀᴛ ꜱᴀʏᴀ🧑🏻‍💻", f"https://tg://openmessage?user_id={owner_id}", "url")]]
 
     buttons = []
     fs_data = helper_handlers.fs_chats
