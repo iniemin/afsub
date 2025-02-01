@@ -20,12 +20,12 @@ def admin_buttons() -> ikb:
 
     return ikb(button_layouts)
 
-async def join_buttons(client: Client, message: Message, user_id: int, owner_id: int = 6997083640) -> Optional[ikb]:
+async def join_buttons(client: Client, message: Message, user_id: int, owner_username: int = "iniemin") -> Optional[ikb]:
     no_join_ids = await helper_handlers.user_is_not_join(user_id)
     if not no_join_ids:
         return None
 
-    owner_button = [[("ᴘᴇᴍʙᴜᴀᴛ ꜱᴀʏᴀ🧑🏻‍💻", f"tg://openmessage?user_id={owner_id}", "url")]]
+    owner_button = [[("ᴘᴇᴍʙᴜᴀᴛ ꜱᴀʏᴀ🧑🏻‍💻", f"https://t.me/{owner_username}", "url")]]
 
     buttons = []
     fs_data = helper_handlers.fs_chats
