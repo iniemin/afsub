@@ -20,7 +20,7 @@ def admin_buttons() -> ikb:
 
     return ikb(button_layouts)
 
-async def join_buttons(client: Client, message: Message, user_id: int, owner_username: int = "iniemin") -> Optional[ikb]:
+async def join_buttons(client: Client, message: Message, user_id: int, owner_username: int = "kingkontol") -> Optional[ikb]:
     no_join_ids = await helper_handlers.user_is_not_join(user_id)
     if not no_join_ids:
         return None
