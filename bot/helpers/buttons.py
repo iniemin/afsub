@@ -38,7 +38,7 @@ async def join_buttons(client: Client, message: Message, user_id: int) -> Option
         start_url = f"t.me/{client.me.username}?start={message.command[1]}"
         join_button_layouts.append([("ᴄᴏʙᴀ ʟᴀɢɪ", start_url, "url")])
 
-    return ikb(owner_button + join_button_layouts)
+    return ikb(join_button_layouts)
 
 class HelperButtons(List[List[Tuple[str, str]]]):
     Close = [[("ᴛᴜᴛᴜᴘ", "close")]]
